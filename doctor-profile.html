@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Profile - Healthcare System</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/doctor-profile/doctor-profile.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo.jpg" alt="Healthcare System Logo">
+            <h1>Healthcare System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chatbot.html">Chatbot</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="recommendation.html">Recommendations</a></li>
+                <li><a href="doctor-profile.html">Doctor Profiles</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="doctor-profile">
+            <div class="profile-container">
+                <img src="assets/images/doctor-avatar.jpg" alt="Doctor Avatar" class="doctor-avatar">
+                <h2>Dr. Sarah Johnson</h2>
+                <p><strong>Specialization:</strong> Pediatrician</p>
+                <p><strong>Experience:</strong> 10 Years</p>
+                <p><strong>Location:</strong> New York, USA</p>
+                <p><strong>Contact:</strong> dr.sarah@example.com</p>
+            </div>
+
+            <div class="about-doctor">
+                <h3>About Dr. Sarah Johnson</h3>
+                <p>Dr. Sarah Johnson has been practicing pediatrics for over a decade. She is passionate about child health and development, ensuring her patients receive the best care possible. She also conducts regular workshops for parents on child nutrition and wellness.</p>
+            </div>
+
+            <div class="availability">
+                <h3>Availability</h3>
+                <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
+                <p><strong>Saturday:</strong> 10:00 AM - 2:00 PM</p>
+                <p><strong>Sunday:</strong> Not Available</p>
+            </div>
+
+            <div class="book-appointment">
+                <h3>Book an Appointment</h3>
+                <form action="#" method="POST" class="appointment-form">
+                    <div class="form-group">
+                        <label for="patient-name">Patient Name:</label>
+                        <input type="text" id="patient-name" name="patient-name" placeholder="Your Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointment-date">Date:</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointment-time">Time:</label>
+                        <input type="time" id="appointment-time" name="appointment-time" required>
+                    </div>
+
+                    <button type="submit" class="submit-button">Book Appointment</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Healthcare System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

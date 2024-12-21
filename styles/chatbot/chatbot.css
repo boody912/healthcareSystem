@@ -1,0 +1,124 @@
+/* Basic Chatbot Layout */
+#chat-window {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 20px;
+}
+
+/* Header inside chat window */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Message Container */
+#messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Individual Chat Bubbles */
+.message {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.message.user {
+    align-items: flex-end;
+}
+
+.message.bot {
+    align-items: flex-start;
+}
+
+.message p {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    max-width: 80%;
+}
+
+/* User message bubble */
+.message.user p {
+    background-color: #3498db;
+    color: white;
+    border-radius: 20px 20px 0 20px;
+}
+
+/* Bot message bubble */
+.message.bot p {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border-radius: 20px 20px 20px 0;
+}
+
+/* Input Section */
+#user-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#message-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#send-button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#send-button:hover {
+    background-color: #2980b9;
+}
+
+/* Add a scrollbar */
+#messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+#messages::-webkit-scrollbar-thumb {
+    background-color: #3498db;
+    border-radius: 10px;
+}
+
+/* Adjusting responsive behavior */
+@media (max-width: 768px) {
+    #chat-window {
+        width: 90%;
+        height: 400px;
+    }
+
+    #message-input {
+        width: 70%;
+    }
+
+    #send-button {
+        width: 25%;
+    }
+}

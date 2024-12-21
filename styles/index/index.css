@@ -1,0 +1,292 @@
+/* General Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Hero Section */
+.hero {
+    background-image: url('../assets/images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #2980b9;
+}
+
+/* features */
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Neutral text color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure flexibility on smaller screens */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between features */
+    max-width: 1200px; /* Limit the width for better layout */
+    margin: 0 auto;
+}
+
+.feature {
+    flex: 1 1 calc(33.333% - 40px); /* Three columns with space */
+    background-color: #ffffff; /* White background for card-like style */
+    border: 1px solid #ddd; /* Subtle border for separation */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #3498db; /* Accent color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555; /* Softer text color */
+    line-height: 1.5;
+}
+
+/* Responsive Design for Features */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column; /* Stack features vertically */
+    }
+
+    .feature {
+        flex: 1 1 100%; /* Full width for each feature */
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.testimonial-card {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.testimonial-card span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* For positioning child elements */
+    width: 100%;
+    height: 70vh; /* Adjust height as needed */
+    background-image: url('assets/images/hero.jpg'); /* Set the hero image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: flex;
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    color: #ffffff;
+    overflow: hidden; /* Prevent any overflow */
+}
+
+/* Overlay for Darkening the Image */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+}
+
+/* Text Content in Hero Section */
+.hero-text {
+    position: relative; /* Stays above the overlay */
+    z-index: 2; /* Ensures it is above the overlay */
+    text-align: center; /* Center-align text */
+    padding: 20px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem; /* Large text size */
+    margin: 0 0 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 0 0 20px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh; /* Adjust height for mobile */
+    }
+
+    .hero-text h2 {
+        font-size: 2rem; /* Smaller text size for mobile */
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+

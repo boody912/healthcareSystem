@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search for doctors, services, or medical resources in our healthcare system.">
+    <title>Search - Healthcare System</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/search/search.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.jpg" alt="Healthcare System Logo">
+                <h1>Healthcare System</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chatbot.html">Chatbot</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="recommendation.html">Recommendations</a></li>
+                    <li><a href="doctor-profile.html">Doctor Profiles</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Search</h1>
+                <p>Find doctors, services, or medical resources tailored to your needs.</p>
+            </div>
+        </section>
+
+        <section class="search-container">
+            <div class="container">
+                <h2>Search for Healthcare Resources</h2>
+                <form action="#" method="GET" class="search-form">
+                    <div class="form-group">
+                        <label for="search">Search Query:</label>
+                        <input type="text" id="search" name="query" placeholder="Search for doctors, services..." required>
+                    </div>
+
+                    <button type="submit" class="submit-button">Search</button>
+                </form>
+
+                <div class="search-results">
+                    <h3>Search Results</h3>
+                    <ul id="results-list">
+                        <!-- Dynamically populated search results -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Healthcare System. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/search.js"></script>
+</body>
+</html>

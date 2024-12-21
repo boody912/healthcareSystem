@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background: url('../assets/images/hero.jpg') no-repeat center center/cover;
+    color: #0e0e0e;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Our Mission Section */
+.our-mission {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.our-mission h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.our-mission p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Our Team Section */
+.our-team {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.our-team h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    flex: 1 1 calc(33% - 20px);
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.why-choose-us h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.why-choose-us ul li {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #333;
+    position: relative;
+    padding-left: 20px;
+}
+
+.why-choose-us ul li:before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: #0073e6;
+    font-weight: bold;
+}
+
